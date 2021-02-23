@@ -1,0 +1,118 @@
+* {
+  //border: red dashed 1px;
+}
+
+html {
+  font-family: Roboto;
+}
+
+.split-pane {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  height: 100%;
+}
+
+.right {
+  margin: 10px;
+  height: 100%;
+}
+
+.input-wrapper {
+  max-width: 100%;
+  height: 100vh;
+  padding: 0px 5px 0 0;
+  font-family: "Cutive Mono";
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  padding: 5px -10px 5px 10px;
+}
+// resizer styles
+
+.Resizer {
+  background: #000;
+  opacity: 1;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.Resizer.vertical {
+  width: 1px;
+  margin: 0 1px;
+  border-left: 3px solid rgba(255, 0, 255, 1);
+  border-right: 3px solid rgba(255, 0, 255, 1);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 3px solid rgba(255, 0, 0, 0.5);
+  border-right: 3px solid rgba(255, 0, 0, 0.5);
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+code {
+  color: blue;
+}
+
+img {
+  width: 100px;
+}
+
+.right,
+.left {
+  margin: 0;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 30px 1fr;
+}
+
+.right-top-wrapper,
+.left-top-wrapper {
+  display: grid;
+  background: hsl(175, 50%, 25%);
+}
+
+.right-text {
+  width: 100%;
+  overflow: auto;
+}
+.preview {
+  height: 0px;
+  margin: 0;
+  padding: 0 10px;
+
+  width: 100%;
+}
+
+.head-text {
+  margin: 5px 0 0 15px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.head {
+  margin: 0;
+}
